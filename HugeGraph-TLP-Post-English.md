@@ -32,30 +32,30 @@ Typical application scenarios of HugeGraph include deep path exploration, user p
 * It has Vermeer, an in-memory computing engine developed in Go, designed for daily scenarios within tens of billions of data, near real-time analysis, extremely simple deployment, and built-in Web monitoring, with 20+ classic graph algorithms supported out of the box;
 * It also has Computer, an in-memory and out-of-core combined engine that supports full graph computation at ultra-large scale (hundreds of billions), supports K8s elastic scaling and disk spilling, making HugeGraph’s full graph analysis truly achieve “not only able to compute at large scale, but also able to compute quickly”.
 
-![](https://fastly.jsdelivr.net/gh/bitflicker64/open-source-writing@main/Images/HugeGraph-Vermeer-Architecture-EN.png)
+![](./Images/HugeGraph-Vermeer-Architecture-EN.png)
 
 3. **Exploration of the Memory Layer of Agentic Graph (Graph AI)**
 
    * The **HugeGraph-AI** repository directly provides **GraphRAG (graph-based retrieval augmented generation)**, natural language to graph query (Text2GQL / Text2Gremlin), automated knowledge graph construction, and 20+ graph learning (GNN) algorithms. This deep integration provides large language models (LLMs) with rigorous topological context, **greatly improving the “hallucination” pain point of large models**, and lowering the engineering threshold for developers to build intelligent graph applications.
    * As the core engine of HugeGraph has matured, its ecosystem construction has also gradually improved. As the core of the ecosystem, HugeGraph-AI integrates vector search and knowledge graph technologies to build deep RAG application solutions. In order to respond to the rapid evolution of large language model (LLM) capabilities and the demands of complex reasoning, we have carried out a deep architectural refactor of HugeGraph-AI.
 
-![](https://fastly.jsdelivr.net/gh/bitflicker64/open-source-writing@main/Images/HugeGraph-LLM-RAG-Architecture-EN.png)
+![](./Images/HugeGraph-LLM-RAG-Architecture-EN.png)
 
 4. **Efficient Import and Visualization Toolchain (Toolchain)**
 
    * HugeGraph-Toolchain covers the complete graph technology toolchain ecosystem. It includes the **Loader** import tool, which supports high-performance online writing from multiple formats / multiple data sources, and is also compatible with mainstream relational databases, Kafka, and Flink CDC data sources. Combined with query capabilities and the Hubble visualization interface, users can more intuitively complete graph data import, modeling, and analysis.
 
-![](https://fastly.jsdelivr.net/gh/bitflicker64/open-source-writing@main/Images/HugeGraph-Visualization-2.0-EN.png)
+![](./Images/HugeGraph-Visualization-2.0-EN.png)
 
 5. **Graph Infrastructure (Overall Overview)**
 
    * The system supports standalone embedded / distributed clusters, and ensures **high availability and data consistency** through the Raft + RocksDB architecture. Combined with the graph computing engine and Graph AI module, it has been running stably in business systems such as **risk control / anti-fraud and real-time feature retrieval** at major internet companies / banks, and has undergone **long-term validation in industrial-grade scenarios**.
 
-![](https://fastly.jsdelivr.net/gh/bitflicker64/open-source-writing@main/Images/HugeGraph-Architecture-Overview-EN.png)
+![](./Images/HugeGraph-Architecture-Overview-EN.png)
 
 ## From 2016 to 2026: HugeGraph’s Evolution Path
 
-![](https://fastly.jsdelivr.net/gh/bitflicker64/open-source-writing@main/Images/HugeGraph-History-Timeline-EN.png)
+![](./Images/HugeGraph-History-Timeline-EN.png)
 
 1. **Project Origin (2016 - 2021)**
    HugeGraph was born in 2016 and was initially independently developed by Baidu to solve the data analysis pain points in complex pan-security scenarios. Before being donated to the Apache Foundation, it was the first open-source graph database on GitHub in China. After several years of community refinement, multiple early versions such as 0.5 to 0.12 were released during this period (by the end of 2021).
