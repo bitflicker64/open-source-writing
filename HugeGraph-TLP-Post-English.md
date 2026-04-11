@@ -107,7 +107,6 @@ With the resurgence of Graph + AI, HugeGraph's development roadmap is focused on
 
 - **Fully open and neutral**: As an **Apache Top-Level Project**, HugeGraph maintains 100% open source across the full stack — from graph storage → graph computing → graph visualization / toolchain → graph AI — allowing users to avoid ecosystem lock-in.
 
-![](./Images/HugrGraph-VS-Neo4j.png)
 
 ## Setting Sail for the Future
 
