@@ -2,7 +2,6 @@
 
 Recently, the Apache Software Foundation (ASF) officially announced that after four years of incubation and refinement, Apache HugeGraph has officially graduated and been promoted to a Top-Level Project (TLP)!
 
----
 
 As the first open-source graph database / graph computing system in China, HugeGraph officially began its Apache incubation journey in January 2022. After four years of community collaboration and patient refinement, on January 12, 2026, the graduation vote in the Apache Incubator was passed unanimously with 18 +1 binding votes and 8 +1 non-binding votes[1][2]. On the subsequent February 12, ASF officially announced the graduation notice[3]. At this point, HugeGraph officially graduated from the incubator and became an Apache Top-Level Project.
 
@@ -74,18 +73,16 @@ Typical application scenarios of HugeGraph include deep path exploration, user p
 
 ## Open Source Story
 
-### 1. Diversified Development
+### 1. Community & Ecosystem Growth
 
-Before joining the Apache Foundation, the HugeGraph community mainly had participation from domestic contributors, and most developers were from the same company, making diversity relatively limited. After joining ASF, many overseas and contributors from different organizations began to emerge, bringing more opportunities for communication and collaboration with other communities, and helping the project embrace the "Community Over Code" culture.
+Since joining the Apache Software Foundation, HugeGraph has grown into a truly diverse, global community. Contributors from different organizations, universities, and countries have joined the project, bringing new perspectives and helping the project fully embrace the "Community Over Code" culture.
 
-However, we also recognize that building a truly global and diverse open-source community is an ongoing process. We still welcome and encourage more contributors from different countries, backgrounds, and organizations to join and participate in shaping the future of HugeGraph together.
-
-![](https://fastly.jsdelivr.net/gh/bucketio/img19@main/2026/03/30/1774806361612-3d019ddc-7c6f-411b-a9d8-ae30f0f93dc6.png)
-
-In addition, besides supporting common Flink/Spark/Hadoop ecosystems, we have also actively collaborated with other open-source communities.
+Beyond supporting common Flink/Spark/Hadoop ecosystems, HugeGraph has actively collaborated with other open-source communities:
 
 - HugeGraph has been integrated as a connector into Apache SeaTunnel and Apache TinkerPop; it has introduced Apache Fory for serialization and off-heap memory management; and actively promotes support for Apache GraphAR graph binary format.
-- We also maintain good technical cooperation with open-source projects such as RocksDB / ToplingDB (storage engines), CGraph (graph orchestration), and JRaft (consensus algorithm). We not only use these open-source technologies, but also actively give back to these communities through submitting PRs and providing technical feedback.
+- We also maintain good technical cooperation with open-source projects such as RocksDB / ToplingDB (storage engines), CGraph (graph orchestration), and JRaft (consensus algorithm) — not only using these technologies, but actively giving back through PRs and technical feedback.
+
+![](./Images/HugeGraph-Overseas-developer.png)
 
 ### 2. University x Open Source Journey
 
@@ -132,7 +129,6 @@ Special thanks to the ASF mentor team, all IPMC/PPMC members who participated or
 
 ### Messages from the Industry
 
----
 
 Congratulations to HugeGraph on officially being promoted to an Apache Top-Level Project! As the first open-source graph database / graph system in China, HugeGraph has, during nearly three years of incubation, rooted itself in mainstream fields such as graph computing, big data, and AI, creating its own value.
 
@@ -140,7 +136,6 @@ Working closely with the community and universities, exploring new approaches, c
 
 —— **Chunel Feng**, Founder of the open-source project CGraph
 
----
 
 Upon learning that Apache HugeGraph has officially graduated from the Apache Incubator and become a Top-Level Project (TLP), as a PPMC member of Apache GeaFlow (Incubating), I would like to extend the most sincere congratulations to HugeGraph on behalf of the Apache GeaFlow community 🎉!
 
@@ -148,7 +143,6 @@ The graduation of HugeGraph not only demonstrates the core graph technologies of
 
 —— **Zhou Qiang**, Apache GeaFlow PPMC / Core Author
 
----
 
 Congratulations to Apache HugeGraph on successfully graduating from the incubator and becoming an Apache Top-Level Project! As an important open-source project in the field of graph technology, HugeGraph has made impressive progress in technical capabilities, product evolution, and community development, fully demonstrating the development potential of high-quality open-source infrastructure software.
 
@@ -156,7 +150,6 @@ Since incubation, the project has continuously iterated, and the community has g
 
 —— **Yang Chaokun**, Apache Fory PMC Chair
 
----
 
 
 ### Get Involved in HugeGraph
