@@ -158,9 +158,6 @@ Since incubation, the project has continuously iterated, and the community has g
 
 ---
 
-Congratulations to HugeGraph on successfully graduating from the Apache Incubator! Graph systems are important infrastructure for understanding complex relational data and are playing an increasingly important role in scenarios such as knowledge graphs, risk control analysis, and intelligent applications.
-
-By providing high-performance graph storage and query capabilities under a distributed architecture, HugeGraph offers a reliable platform for processing massive relational data. It is great to see HugeGraph continuously improving its technical system and building an active open-source community during incubation. Wishing the project continued growth and broader impact in the field of graph data technology in the future!
 
 ### Get Involved in HugeGraph
 
