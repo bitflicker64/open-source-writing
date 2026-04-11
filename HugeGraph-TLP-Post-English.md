@@ -89,9 +89,62 @@ In addition, besides supporting common Flink/Spark/Hadoop ecosystems, we have al
 
 Since joining Apache incubation, HugeGraph has, for many consecutive years, been selected as an organization project for **GSoC (Google Summer of Code) and OSPP / GLCC** (Open Source Summer / CCF). Dozens of university students from around the world have gained rich open source experience and generous rewards by participating in the development of core functional modules.
 
-![](https://fastly.jsdelivr.net/gh/bucketio/img11@main/2026/03/30/1774806412511-e222407b-65e1-45a9-a7bb-edf23b283ba1.png)
+![](./Images/HugeGraph-OSPP_EN.png)
+
 
 Among them, some students with outstanding contributions and deeper accumulation were later nominated as Apache Committers and even became members of the PMC (project core), and also obtained opportunities such as internships at major companies. In the articles that follow, we will gradually update the related experiences and sharing of these students, so that each student can show their own style.
+
+### 3. Users and Adoption
+
+As a project that has undergone long-term refinement, HugeGraph has been running stably in production environments of many leading internet companies and financial institutions, including well-known technology and financial enterprises such as BAT, Huolala, CVTE, and ICBC, all of which are real users. At the beginning of 2026, the main code repository surpassed 3000+ stars on GitHub. The entire ecosystem has gathered more than 210+ contributors, with developers and users widely distributed across 50+ companies such as Tencent, Baidu, CVTE, Huolala, 360, NetEase Games, ByteDance, as well as major universities both domestically and internationally. External contributors account for more than 90% of code commits, truly achieving a healthy evolution from a single entity → community-driven model.
+
+Since introducing HugeGraph into risk control scenarios in 2021, the graph data model has been applied throughout the full lifecycle of risk control, supporting real-time online queries within P99 latency of hundreds of milliseconds, meeting the high-performance requirements of real-time anti-fraud. Congratulations to HugeGraph on its successful graduation!
+
+—— **Yang Jiaqi**, HugeGraph Committer, Big Data Architect at Huolala
+
+Congratulations to HugeGraph on officially becoming an Apache Top-Level Project! Graph technology faces many new challenges in the era of large models, but it has also been infused with new vitality. The HugeGraph community keeps pace with technological trends, bringing many innovative ideas and implementations to both the underlying graph infrastructure and upper-level intelligent graph applications. Currently, HugeGraph has deep applications in many scenarios such as manufacturing, quality, and education at CVTE. Looking forward to jointly exploring more valuable application scenarios and interesting technical breakthroughs in the future.
+
+—— **Zhang Shiming**, HugeGraph PMC Member, Researcher at CVTE
+
+## Reshaping Graph Infrastructure
+
+With the resurgence of AI + Graph in current trends, when we discuss the development of “future graph technology”, what should we focus on?
+
+For teams facing technology selection and preparing to migrate from traditional closed-source or open-source standalone graph databases (such as Neo4j), choosing HugeGraph is often about solving real problems in graph scenarios. While paying tribute to predecessors, we have chosen a gradual path from adaptation → self-developed distributed architecture for massive graph data:
+
+* **Strong horizontal scalability**: Early graph systems were mostly based on standalone or in-memory architectures. When business vertex and edge data reaches tens of billions or even hundreds of billions, relying on vertical scaling (adding memory or disks) easily hits physical limits. HugeGraph, from its early multi-storage backend support to the latest distributed **HStore**, enables easy horizontal elastic scaling like building blocks, stably handling high-frequency concurrent read and write pressure.
+
+* **Embracing AI capabilities**: In the wave of LLMs, HugeGraph chooses to **provide native AI integration capabilities**. The independent hugegraph-ai module not only integrates 21 graph learning algorithms, but also supports **MCP + GraphRAG**, directly providing precise graph context for large models and improving hallucination issues.
+
+* **Low migration barrier**: HugeGraph provides a high-performance data import tool loader, which can seamlessly connect to multiple data sources such as local files, HDFS, Kafka, and Flink CDC. It also supports the SeaTunnel connector for convenient data transformation ecosystem reuse and expansion. At the same time, it **supports both Gremlin and Cypher query languages**, making it easy for existing graph users to migrate smoothly.
+
+* **Fully open and neutral**: In the industry, enterprise-level features such as high availability, visualization, and cluster management are often restricted to “enterprise editions” or are not fully open source. As an **Apache Top-Level Project**, HugeGraph maintains 100% open source across the full stack from “graph storage → graph computing → graph visualization / toolchain → graph AI”, allowing users to avoid ecosystem lock-in concerns.
+
+![](./Images/HugrGraph-VS-Neo4j.png)
+
+## Setting Sail for the Future, Opening a New Chapter of Co-construction
+
+![](./Images/HugeGraph-Cooperation-EN.png)
+
+After years of refinement and four years of Apache incubation, HugeGraph’s core graph storage and graph computing engines, along with its distributed foundation, have become relatively stable and reliable, and have undergone “long-term validation” in real-world scenarios across major internet companies and universities. Graduation from the foundation also marks the beginning of a new phase of exploration.
+
+The stability of the foundation means that the curtain for upper-layer innovation has officially been raised. We firmly believe that the future of graphs lies in “Graph + AI” and “large-scale complex computation”. Therefore, we extend an invitation for deep collaboration to universities, research teams, laboratories, and enterprise developers:
+
+1. **For universities and laboratories (top-tier research and cutting-edge work):** If you lack an industrial-grade data foundation to validate your graph algorithms or Graph + LLM ideas, HugeGraph provides an out-of-the-box graph data platform. We warmly welcome academic teams to conduct research based on HugeGraph, and even lead the further evolution of core modules such as HugeGraph-AI and memory management. On the platform of an Apache Top-Level Project, your research成果 will directly reach thousands of enterprise users worldwide, enabling not only high-quality academic publications (such as `VLDB/SIGMOD`), but also leaving your mark in the open-source world of Apache.
+
+2. **For enterprises and individual developers (lead development, open and neutral):** HugeGraph does not belong to any commercial company. It is a fully open-source project driven 100% by the Apache Foundation and its community. The project is currently in a transition phase from a “distributed graph system” to an “intelligent graph service”. By joining the community, you do not need to design a graph system from scratch. You can build upon existing work, directly lead the development of core features, and quickly grow into an Apache Committer or even a PMC member, contributing to shaping the future of next-generation graph technology.
+
+In addition, the community will continue to deepen the integration of graph and AI ecosystems, strengthen the distributed capabilities of the graph engine, and further promote the combination of graph and LLM to provide stronger support for Agentic evolution.
+
+### Acknowledgements and Thanks
+
+Every step forward of the community is inseparable from the collective efforts of developers around the world. Whether it is **submitting code**, **reporting issues**, **contributing documentation**, or **participating in discussions**, all have been crucial to HugeGraph’s successful promotion to a Top-Level Project.
+
+Here, we would like to express our special thanks to all community members who have participated in HugeGraph’s architectural refactoring, code contributions, documentation translation, and issue feedback. Special thanks to the ASF mentor team of the project, all IPMC/PPMC members who participated or provided suggestions, and all Committers and Contributors who have long supported the community by answering questions and providing guidance. (The figure below shows the complete list of GitHub contributors during the incubation period.)
+
+![](https://fastly.jsdelivr.net/gh/bucketio/img9@main/2026/03/30/1774806815020-dbed4b04-5f8a-42d6-bec3-ba527e91df0b.png)
+
+*In addition to community contributions, we also sincerely thank Baidu, as the donating company, for providing an open environment for the project’s growth<span class="superscript">[5]</span>. We would like to give special thanks to Mr. Ma Hongwei from OSPO for his strong support and careful guidance; to Mr. Bao Chenfu from TC and the OSPP/GLCC organizers for their steadfast support of open-source technology and ecosystem; and to team members such as Liu Jie, Han Zuli, Zhang Yi, Li Yulin, and Ji Shilei who have contributed to the project. Finally, we thank everyone who participated in documentation writing/modification, project releases, and all friends who have followed and supported the project’s development. Due to space limitations, we cannot name everyone individually, but every contribution is remembered. On the open-source journey, thank you for walking alongside us!*
 
 ## Messages
 
